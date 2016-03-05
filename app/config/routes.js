@@ -6,11 +6,13 @@ var IndexRoute = ReactRouter.IndexRoute;
 
 var Main = require("../components/Main");
 var Home = require("../components/Home");
+var Undefined = null;
 
 var routes = (
   <Router>
     <Route path="/" component={Main}>
-      <Route path="/home" component={Home} />
+      <IndexRoute component={Home} />
+      <Route path="/undefined" component={Undefined} />
     </Route>
   </Router>
 )
